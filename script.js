@@ -22,7 +22,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   } else if (guess > secretNumber) {
     if (score > 1) {
-      document.querySelector('.message').textContent = '📈 To High!';
+      document.querySelector('.message').textContent = '📈 Too High!';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
@@ -31,7 +31,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   } else if (guess < secretNumber) {
     if (score > 1) {
-      document.querySelector('.message').textContent = '📉 To Low!';
+      document.querySelector('.message').textContent = '📉 Too Low!';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
